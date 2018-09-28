@@ -32,13 +32,11 @@ export class GitUsersComponent implements OnInit {
         findUsers() {
           this.service.updateProfile(this.userName);
           this.service.getUserInfo().subscribe(userPage => {
-            this.userPage = userPage;
-            console.log(userPage);
+            this.users = userPage;
 
           });
 
           this.service.getUserRepos().subscribe(repositorys => {
-            console.log(repositorys);
             this.repositorys = repositorys;
 
           });

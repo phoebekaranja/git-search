@@ -16,12 +16,12 @@ export class RepositoryComponent implements OnInit {
 
 
       this.gitapiservice.getUserInfo().subscribe((userPage)=>{
-        console.log(userPage);
+        // console.log(userPage);
         this.users = userPage;
       });
       this.gitapiservice.getUserRepos().subscribe((repositories)=>{
-          console.log(repositories);
           this.repositories = repositories;
+          console.log(this.repositories);
 
         });
         // findUsers() {

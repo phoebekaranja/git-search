@@ -12,8 +12,7 @@ export class gitapiService {
   private apiKey: string = environment.apiUrl;
   constructor(public http: HttpClient) {
     console.log('service is now ready');
-    this.userName = 'phoebe';
-
+    this.userName = 'phoebeKaranja'
   }
 
   getUserInfo() {
@@ -25,7 +24,7 @@ export class gitapiService {
   }
   updateProfile(userName: string) {
     this.userName = userName;
-
+    console.log(this.userName)
   }
 
 }

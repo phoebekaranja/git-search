@@ -5,10 +5,11 @@
 </form>
 <div class="container">
   <div class="card">
-  <div class="card-header display-4" style="text-align:center; color:#0d47a1"> {{users.login}}'see repositories</div>
-  <div class="card-body" *ngFor="let repository of repositories, let i=index">
-    <!--<h5 appStrikethrough class="clearfix">{{repositories[i].name}} --><a href="{{repository[i].html_url}}" target="_blank" class="btn btn-sm btn-outline-primary float-right"> View on Github</a>
-    <p >{{repository[i].description}}</p>
+    <div class="card-header display-4" style="text-align:center; color:#0d47a1"> {{users.login}}'see repositories</div>
+    <div class="card-body" *ngFor="let repository of repositories, let i=index">
+      <h5 appStrikethrough class="clearfix">{{repository.name}}</h5>
+        <a href="{{repository[i].html_url}}" target="_blank" class="btn btn-sm btn-outline-primary float-right"> View on Github</a>
+      <p >{{repository[i].description}}</p>
+    </div>
   </div>
-</div>
 </div>
