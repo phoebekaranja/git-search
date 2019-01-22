@@ -13,7 +13,7 @@ An angular project to show implementing Git hub API, services and environments.
 
 
 This is an app that lets users search through Github for other users and also view their repositories. This is implemented using the Github API.
-The app is live on https://phoebe.github.io/GithubAPI
+The app is live on https://phoebekaranja.github.io/git-search/
 
 
 
